@@ -3,14 +3,6 @@ import img from '../../../Images/2350619-1.png';
 
 const Faq = () => {
     return (
-        // <div className="row">
-        //     <div className="col-sm-12 col-md-6">
-
-        //     </div>
-        //     <div className="col-sm-12 col-md-6">
-
-        //     </div>
-        // </div>
         <div className="container">
             <h1 className="text-center color fw-bold mt-5">Frequently Asked Questions</h1>
             <div className="row d-flex justify-content-lg-between">

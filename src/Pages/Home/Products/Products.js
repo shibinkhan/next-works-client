@@ -6,7 +6,7 @@ const Products = () => {
 
     // services
     useEffect(() => {
-        fetch('https://guarded-sierra-27673.herokuapp.com/bikes/six')
+        fetch('https://secure-tundra-16355.herokuapp.com/bikes/six')
             .then(res => res.json())
             .then(data => {
                 // console.log(data);
@@ -17,7 +17,7 @@ const Products = () => {
     return (
         <div>
             <div className="container mt-3">
-                <h1 className="color pt-3 mt-4 mb-3 fw-bold">Choose Your Desire Bike</h1>
+                <h1 className="color pt-3 mt-4 mb-3 fw-bold">Available Works</h1>
                 <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                     {
                         bikes.map(bike => <Bike

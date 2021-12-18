@@ -124,21 +124,21 @@ const useFirebase = () => {
     const saveUserInfo = (email, displayName, method) => {
         const user = { email, displayName };
         // console.log(user);
-        fetch('https://guarded-sierra-27673.herokuapp.com/users', {
+        fetch('https://secure-tundra-16355.herokuapp.com/users', {
             method: method,
             headers: {
                 'content-type': 'application/json'
             },
             body: JSON.stringify(user)
         })
-        .then(res => res.json())
-        .then(data => {
-            // console.log(data);
-        });
+            .then(res => res.json())
+            .then(data => {
+                // console.log(data);
+            });
     };
 
     useEffect(() => {
-        fetch(`https://guarded-sierra-27673.herokuapp.com/users/${user.email}`)
+        fetch(`https://secure-tundra-16355.herokuapp.com/users/${user.email}`)
             .then(res => res.json())
             .then(data => {
                 // console.log(data);

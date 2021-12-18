@@ -6,7 +6,7 @@ const ManageProduct = ({ bike }) => {
     const [bikes, setBikes] = useState([]);
 
     useEffect(() => {
-        fetch('https://guarded-sierra-27673.herokuapp.com/bikes')
+        fetch('https://secure-tundra-16355.herokuapp.com/bikes')
             .then(res => res.json())
             .then(data => {
                 // console.log(data);
@@ -17,7 +17,7 @@ const ManageProduct = ({ bike }) => {
     const handleDeleteBike = id => {
         const procced = window.confirm('Are you sure want to delete this bike?');
         if (procced) {
-            fetch(`https://guarded-sierra-27673.herokuapp.com/bikes/${id}`, {
+            fetch(`https://secure-tundra-16355.herokuapp.com/bikes/${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())

@@ -8,7 +8,7 @@ const Review = () => {
     const onSubmit = data => {
         // console.log(data);
         reset();
-        axios.post('https://guarded-sierra-27673.herokuapp.com/reviews', data)
+        axios.post('https://secure-tundra-16355.herokuapp.com/reviews', data)
             .then(res => {
                 // console.log(res);
                 if (res.data.insertedId) {

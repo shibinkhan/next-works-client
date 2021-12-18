@@ -8,7 +8,7 @@ const Order = ({ order }) => {
     const [singleOrder, setSingleOrder] = useState([]);
 
     useEffect(() => {
-        fetch('https://guarded-sierra-27673.herokuapp.com/orders')
+        fetch('https://secure-tundra-16355.herokuapp.com/orders')
             .then(res => res.json())
             .then(data => {
                 // console.log(data);
@@ -19,7 +19,7 @@ const Order = ({ order }) => {
     const handleDeleteO = id => {
         const procced = window.confirm('Are you sure want to cancel this Order?');
         if (procced) {
-            fetch(`https://guarded-sierra-27673.herokuapp.com/orders/${id}`, {
+            fetch(`https://secure-tundra-16355.herokuapp.com/orders/${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())

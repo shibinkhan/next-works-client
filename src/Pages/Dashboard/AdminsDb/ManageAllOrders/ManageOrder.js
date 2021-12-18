@@ -8,7 +8,7 @@ const ManageOrder = ({ order }) => {
     const [singleOrder, setSingleOrder] = useState([]);
 
     useEffect(() => {
-        fetch('https://guarded-sierra-27673.herokuapp.com/orders')
+        fetch('https://secure-tundra-16355.herokuapp.com/orders')
             .then(res => res.json())
             .then(data => {
                 // console.log(data);
@@ -19,7 +19,7 @@ const ManageOrder = ({ order }) => {
     const handleDeleteMO = id => {
         const procced = window.confirm('Are you sure want to delete this order?');
         if (procced) {
-            fetch(`https://guarded-sierra-27673.herokuapp.com/orders/${id}`, {
+            fetch(`https://secure-tundra-16355.herokuapp.com/orders/${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())
@@ -35,7 +35,7 @@ const ManageOrder = ({ order }) => {
     };
 
     const handleUpdateMO = id => {
-        fetch(`https://guarded-sierra-27673.herokuapp.com/orders/${id}`, {
+        fetch(`https://secure-tundra-16355.herokuapp.com/orders/${id}`, {
             method: 'PUT'
         })
             .then(res => res.json())

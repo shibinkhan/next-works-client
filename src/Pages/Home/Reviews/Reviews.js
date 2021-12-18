@@ -5,7 +5,7 @@ const Reviews = () => {
     const [singleReview, setSingleReview] = useState([]);
 
     useEffect(() => {
-        fetch('https://guarded-sierra-27673.herokuapp.com/reviews')
+        fetch('https://secure-tundra-16355.herokuapp.com/reviews')
             .then(res => res.json())
             .then(data => {
                 // console.log(data);
@@ -15,7 +15,7 @@ const Reviews = () => {
 
     return (
         <div className="container mt-3">
-            <h1 className="color pt-3 mt-4 mb-3 fw-bold">Customer's Reviews</h1>
+            <h1 className="color pt-3 mt-4 mb-3 fw-bold">Worker's Reviews</h1>
             <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3">
                 {
                     singleReview.map(theReview =>

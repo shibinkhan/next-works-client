@@ -5,7 +5,7 @@ const useHooks = () => {
     const [singleOrder, setSingleOrder] = useState([]);
 
     useEffect(() => {
-        fetch('https://guarded-sierra-27673.herokuapp.com/orders')
+        fetch('https://secure-tundra-16355.herokuapp.com/orders')
             .then(res => res.json())
             .then(data => {
                 // console.log(data);
@@ -16,7 +16,7 @@ const useHooks = () => {
     const [bikes, setBikes] = useState([]);
 
     useEffect(() => {
-        fetch('https://guarded-sierra-27673.herokuapp.com/bikes')
+        fetch('https://secure-tundra-16355.herokuapp.com/bikes')
             .then(res => res.json())
             .then(data => {
                 // console.log(data);
@@ -27,7 +27,7 @@ const useHooks = () => {
     const { bikeId } = useParams();
     const [singleBike, setSingleBike] = useState({});
     useEffect(() => {
-        fetch(`https://guarded-sierra-27673.herokuapp.com/bikes/${bikeId}`)
+        fetch(`https://secure-tundra-16355.herokuapp.com/bikes/${bikeId}`)
             .then(res => res.json())
             .then(data => {
                 // console.log(data);
@@ -39,7 +39,7 @@ const useHooks = () => {
 
     // services
     useEffect(() => {
-        fetch('https://guarded-sierra-27673.herokuapp.com/bikes/six')
+        fetch('https://secure-tundra-16355.herokuapp.com/bikes/six')
             .then(res => res.json())
             .then(data => {
                 // console.log(data);
@@ -50,7 +50,7 @@ const useHooks = () => {
     const [singleReview, setSingleReview] = useState([]);
 
     useEffect(() => {
-        fetch('https://guarded-sierra-27673.herokuapp.com/reviews')
+        fetch('https://secure-tundra-16355.herokuapp.com/reviews')
             .then(res => res.json())
             .then(data => {
                 // console.log(data);

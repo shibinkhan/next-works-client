@@ -25,7 +25,7 @@ const BikeDetails = () => {
             bikeInfo: bikeInfo,
             customerInfo: data
         };
-        axios.post('https://guarded-sierra-27673.herokuapp.com/orders', orderInfo)
+        axios.post('https://secure-tundra-16355.herokuapp.com/orders', orderInfo)
             .then(res => {
                 // console.log(res);
                 if (res.data.insertedId) {
@@ -35,7 +35,7 @@ const BikeDetails = () => {
     };
 
     useEffect(() => {
-        fetch(`https://guarded-sierra-27673.herokuapp.com/bikes/${bikeId}`)
+        fetch(`https://secure-tundra-16355.herokuapp.com/bikes/${bikeId}`)
             .then(res => res.json())
             .then(data => {
                 // console.log(data);

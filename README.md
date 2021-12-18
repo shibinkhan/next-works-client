@@ -2,7 +2,7 @@
 
 Website Link: [SKB Bike Shop](https://skb-bike-shop.web.app/).
 
-Server Link: [Click Here](https://guarded-sierra-27673.herokuapp.com/).
+Server Link: [Click Here](https://secure-tundra-16355.herokuapp.com/).
 
 ### `Short Description`
 SKB Bike Shop, For over 55 years, EF has been working to keep minds and the world wide open. We design tours to help educators teach, and so students can learn more about tolerance, other perspectives, and themselves.

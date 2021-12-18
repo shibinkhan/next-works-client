@@ -8,7 +8,7 @@ const MakeAdmin = () => {
         // console.log(data);
         reset();
         const user = { email: data.email };
-        fetch('https://guarded-sierra-27673.herokuapp.com/users/admin', {
+        fetch('https://secure-tundra-16355.herokuapp.com/users/admin', {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

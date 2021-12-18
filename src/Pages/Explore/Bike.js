@@ -14,7 +14,7 @@ const Bike = ({ bike }) => {
                     <p>Price: <span className="fw-bold">BDT {price} Only</span></p>
                     <p>{description}</p>
                 </div>
-                <NavLink to={`/bike/${_id}`}><button className="button mb-5 px-4">Procced to Buy</button></NavLink>
+                <NavLink to={`/bike/${_id}`}><button className="button mb-5 px-4">Apply Now</button></NavLink>
             </div>
         </div>
     );
