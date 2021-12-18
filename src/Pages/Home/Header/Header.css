@@ -1,0 +1,25 @@
+.header {
+    background-color: rgb(29, 29, 29);
+}
+.main-navbar {
+    margin: 10px 0px;
+}
+.navbar-brand {
+    font-size: 25px;
+    font-weight: 700;
+}
+.user-img {
+    max-width: 40px;
+    border-radius: 50%;
+}
+.nav-link {
+    
+}
+.nav-link:hover {
+    background-color: rgb(61, 61, 61);
+    border-radius: 5px;
+}
+.nav-bar-btn {
+    background-color: rgb(29, 29, 29);
+    font-weight: 500;
+}

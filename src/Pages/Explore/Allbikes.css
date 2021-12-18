@@ -1,0 +1,27 @@
+.card-body-custom {
+    border: none;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+.service-img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    /* height: 400px; */
+}
+.card-body-custom:hover {
+    transform: scale(1.03);
+}
+.service-booking-main {
+    margin: 0px;
+}
+.service-booking {
+    background-color: rgb(204, 255, 238);
+    position: sticky;
+    top: 75px;
+    padding: 25px 0px;
+}
+.order-form input {
+    width: 95%;
+    height: 50px;
+    padding-left: 5px;
+}

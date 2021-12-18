@@ -1,0 +1,11 @@
+.review-form {
+    text-align: left;
+}
+.review-form textarea {
+    border: none;
+    height: 200px;
+}
+.review-input {
+    border: none;
+    height: 50px;
+} 

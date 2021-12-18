@@ -1,0 +1,25 @@
+.dash-side-nav-main{
+    border-right: 1px solid rgb(194, 194, 194);
+}
+.dashboard-side-nav {
+    display: block;
+    text-decoration: none;
+    padding: 10px 0px;
+    font-size: 18px;
+    font-weight: 500;
+    border-bottom: 1px solid gray;
+    color: black;
+}
+.dash-log-out {
+    border: none;
+    background-color: transparent;
+}
+.dashboard-side-nav:hover {
+    background-color: rgb(248, 248, 248);
+    color: black;
+}
+@media screen and (max-width: 768px) {
+    .dash-side-nav-main{
+        border-right: none;
+    }
+}
