@@ -9,16 +9,20 @@
     color: rgb(212, 212, 212);
 }
 .button {
-    border: none;
-    padding: 7.5px 15px;
-    border-radius: 5px;
-    font-weight: 600;
-    transition: 0.4s;
+    background-color: #df3f3f;
+    border: 3px solid transparent;
+    margin-right: 10px;
+    padding: 5px 20px;
+    border-radius: 7.5px;
     color: white;
-    background-color: rgb(29, 29, 29);
+    transition: 0.4s;
+    font-weight: 600;
 }
 .button:hover {
+    background-color: transparent;
+    border: 3px solid #EA4343;
     transform: scale(1.05);
+    color:rgb(200, 200, 200);
 }
 .button2 {
     border: none;

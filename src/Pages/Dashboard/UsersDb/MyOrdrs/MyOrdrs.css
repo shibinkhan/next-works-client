@@ -1,8 +1,11 @@
 .vh {
     min-height: 100vh;
 }
+.order {
+    color: rgb(212, 212, 212);
+}
 .color {
-    /* color: rgb(19, 107, 53); */
+    color: #EA4343;
 }
 .order-info, .order-info-your {
     text-align: left;

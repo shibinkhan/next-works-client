@@ -21,11 +21,11 @@ const Review = () => {
         <div className="vh">
             <h2 className="fw-bold color my-3">Add a Review</h2>
             <form onSubmit={handleSubmit(onSubmit)} className="review-form">
-                <input className="review-input w-100 mb-3" placeholder="Your Name..." {...register("name", { required: true })} />
+                <input className="review-input w-100 mb-3 ps-2" placeholder="Your Name..." {...register("name", { required: true })} />
                 <br />
-                <input className="review-input w-100 mb-3" type="number" placeholder="Rating...(0-5)" {...register("rating", { required: true })} />
+                <input className="review-input w-100 mb-3 ps-2" type="number" placeholder="Rating...(0-5)" {...register("rating", { required: true })} />
                 <br />
-                <textarea className="w-100" placeholder="Your Review..." {...register("review", { required: true })} />
+                <textarea className="w-100 ps-2" placeholder="Your Review..." {...register("review", { required: true })} />
                 <br />
                 <input className="button" type="submit" value="Add This Review" />
             </form>

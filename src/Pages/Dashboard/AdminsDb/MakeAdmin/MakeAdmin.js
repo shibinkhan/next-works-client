@@ -27,8 +27,8 @@ const MakeAdmin = () => {
     return (
         <div className="vh">
             <form className="mt-5" onSubmit={handleSubmit(onSubmit)}>
-                <input className="w-75 make-admin-email mb-3" type="email" placeholder="New Admin's Email..." {...register("email", { required: true })} />
-                <input className="w-75 make-admin-email mb-3" type="password" placeholder="Password..." {...register("password", { required: true })} />
+                <input className="w-75 make-admin-email mb-3 ps-2" type="email" placeholder="New Admin's Email..." {...register("email", { required: true })} />
+                <input className="w-75 make-admin-email mb-3 ps-2" type="password" placeholder="Password..." {...register("password", { required: true })} />
                 <br />
                 <input className="button addService" placeholder="" type="submit" value="Add Admin" />
             </form>

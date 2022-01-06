@@ -1,7 +1,7 @@
 import React from 'react';
-import img1 from '../../../Images/slider (1).jpg';
-import img2 from '../../../Images/slider (2).jpg';
-import img3 from '../../../Images/slider (3).jpg';
+import img1 from '../../../Images/banner (1).jpg';
+import img2 from '../../../Images/banner (2).jpg';
+import img3 from '../../../Images/banner (3).jpg';
 
 const TopBanner = () => {
     return (
@@ -20,12 +20,12 @@ const TopBanner = () => {
                         </div>
                     </div>
                     <div className="carousel-item">
-                        <img src={img2} className="d-block w-100" alt="..." />
+                        <img src={img3} className="d-block w-100" alt="..." />
                         <div className="carousel-caption d-none d-md-block">
                         </div>
                     </div>
                     <div className="carousel-item">
-                        <img src={img3} className="d-block w-100" alt="..." />
+                        <img src={img2} className="d-block w-100" alt="..." />
                         <div className="carousel-caption d-none d-md-block text-dark">
                         </div>
                     </div>

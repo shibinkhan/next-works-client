@@ -23,18 +23,20 @@ const Resister = () => {
     return (
         <div className="resister vh">
             <Header />
-            <div className="container">
-                <h1 className="fw-bold color my-3">Resistration</h1>
-                <form onSubmit={handleSubmit(onSubmit)}>
-                    <input type="name" placeholder="Full Name..." {...register("displayName", { required: true })} />
-                    <input type="email" placeholder="Email..." {...register("email", { required: true })} />
-                    <input type="password" placeholder="Password..." {...register("password", { required: true })} />
-                    <input type="password" placeholder="Re-type Password..." {...register("password2", { required: true })} />
-                    <input className="button addService w-25" placeholder="" type="submit" value="Create" />
-                </form>
-                <hr />
-                <p>Already Have Account?</p>
-                <NavLink to="/login"><button className="button w-25">Log In</button></NavLink>
+            <div className="d-flex justify-content-center">
+                <div className="resister-main my-5 py-5">
+                    <h1 className="fw-bold color my-3">Resistration</h1>
+                    <form onSubmit={handleSubmit(onSubmit)}>
+                        <input className="inputR ps-2" type="name" placeholder="Full Name..." {...register("displayName", { required: true })} />
+                        <input className="inputR ps-2" type="email" placeholder="Email..." {...register("email", { required: true })} />
+                        <input className="inputR ps-2" type="password" placeholder="Password..." {...register("password", { required: true })} />
+                        <input className="inputR ps-2" type="password" placeholder="Re-type Password..." {...register("password2", { required: true })} />
+                        <input className="button w-25" placeholder="" type="submit" value="Create" />
+                    </form>
+                    <hr className='color' />
+                    <p className="color">Already Have Account?</p>
+                    <NavLink to="/login"><button className="button w-25">Log In</button></NavLink>
+                </div>
             </div>
         </div>
     );

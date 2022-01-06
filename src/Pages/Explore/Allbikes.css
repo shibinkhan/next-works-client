@@ -2,6 +2,8 @@
     border: none;
     border-radius: 10px;
     transition: 0.4s;
+    background-color: #333232;
+    color: rgb(212, 212, 212);
 }
 .service-img {
     border-top-left-radius: 10px;
@@ -24,4 +26,24 @@
     width: 95%;
     height: 50px;
     padding-left: 5px;
+}
+
+
+.card-body-custom2 {
+    border: none;
+    border-radius: 10px;
+    transition: 0.4s;
+    background-color: #4b4b4b;
+    color: rgb(175, 175, 175);
+}
+.card-body-custom2:hover {
+    transform: scale(1.03);
+}
+.apply-input {
+    border: none;
+    height: 50px;
+    background-color: #363636;
+    color: white;
+    border-radius: 5px;
+    border: none;
 }

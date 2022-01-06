@@ -1,14 +1,31 @@
+.resister-main {
+    background-color: #333232;
+    width: 50%;
+    border-radius: 10px;
+}
 .resister form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.resister form input {
+.resister form .inputR {
     padding-top: 10px;
     padding-bottom: 10px;
+    background-color: #525252;
+    border: none;
+    border-radius: 5px;
+    color: white;
 }
 .resister form input, textarea {
-    width: 50%;
+    width: 75%;
     margin-bottom: 10px;
+}
+@media screen and (max-width: 720px) {
+    .resister-main {
+    width: 90%;
+}
+}
+.grayText {
+    color: rgb(212, 212, 212);
 }

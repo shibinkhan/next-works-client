@@ -12,6 +12,12 @@
     width: 75%;
     margin-bottom: 10px;
 }
+.inputpro {
+    border: none;
+    border-radius: 5px;
+    background-color: #4d4d4d;
+    color: white;
+}
 .add-service form textarea {
     width: 75%;
     margin-bottom: 10px;

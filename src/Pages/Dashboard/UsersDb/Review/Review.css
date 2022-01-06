@@ -4,8 +4,16 @@
 .review-form textarea {
     border: none;
     height: 200px;
+    background-color: #4b4b4b;
+    color: white;
+    border-radius: 5px;
+    border: none;
 }
 .review-input {
     border: none;
     height: 50px;
+    background-color: #4b4b4b;
+    color: white;
+    border-radius: 5px;
+    border: none;
 } 

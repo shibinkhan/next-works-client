@@ -1,5 +1,8 @@
+.dashboard {
+    background-color: #333232;
+}
 .dash-side-nav-main{
-    border-right: 1px solid rgb(194, 194, 194);
+    border-right: 1px solid #EA4343;
 }
 .dashboard-side-nav {
     display: block;
@@ -7,16 +10,16 @@
     padding: 10px 0px;
     font-size: 18px;
     font-weight: 500;
-    border-bottom: 1px solid gray;
-    color: black;
+    border-bottom: 1px solid #EA4343;
+    color: rgb(212, 212, 212);
 }
 .dash-log-out {
     border: none;
     background-color: transparent;
 }
 .dashboard-side-nav:hover {
-    background-color: rgb(248, 248, 248);
-    color: black;
+    background-color: #525252;
+    color: rgb(212, 212, 212);
 }
 @media screen and (max-width: 768px) {
     .dash-side-nav-main{

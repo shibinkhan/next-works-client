@@ -12,20 +12,20 @@ const AddAProduct = () => {
             .then(res => {
                 // console.log(res);
                 if (res.data.insertedId) {
-                    alert('New Bike Added Successfully.')
+                    alert('Work Added Successfully.')
                 }
             })
     };
 
     return (
         <div className="add-service vh">
-            <h2 className="fw-bold color my-3">Add a New Bike</h2>
+            <h2 className="fw-bold color my-3">Add a Work</h2>
             <form onSubmit={handleSubmit(onSubmit)}>
-                <input placeholder="Name..." {...register("name", { required: true })} />
-                <input placeholder="Price..." {...register("price", { required: true })} />
-                <textarea placeholder="Description..." {...register("description", { required: true })} />
-                <textarea placeholder="Specifications..." {...register("specifications")} />
-                <input placeholder="Card Image Link..." {...register("img")} />
+                <input className='inputpro ps-2' placeholder="Name..." {...register("name", { required: true })} />
+                <input className='inputpro ps-2' placeholder="Price..." {...register("price", { required: true })} />
+                <textarea className='inputpro ps-2' placeholder="Description..." {...register("description", { required: true })} />
+                <textarea className='inputpro ps-2' placeholder="Specifications..." {...register("specifications")} />
+                <input className='inputpro ps-2' placeholder="Card Image Link..." {...register("img")} />
                 <input className="button addService w-25" placeholder="" type="submit" value="Add" />
             </form>
         </div>

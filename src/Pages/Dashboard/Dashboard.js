@@ -17,7 +17,7 @@ const Dashboard = () => {
     let { path, url } = useRouteMatch();
 
     return (
-        <div className="vh">
+        <div className="dashboard vh">
             <div className="container">
                 <div className="row g-4">
                     <div className="col-md-3 dash-side-nav-main">
@@ -25,14 +25,14 @@ const Dashboard = () => {
                         <NavLink className="dashboard-side-nav" to="/home">Home</NavLink>
                         {!admin ?
                             <div>
-                                <NavLink className="dashboard-side-nav" to={`${url}`}>My Orders</NavLink>
+                                <NavLink className="dashboard-side-nav" to={`${url}`}>Applied Works</NavLink>
                                 <NavLink className="dashboard-side-nav" to={`${url}/payment`}>Payments</NavLink>
                                 <NavLink className="dashboard-side-nav" to={`${url}/review`}>Review</NavLink>
                             </div> :
                             <div>
-                                <NavLink className="dashboard-side-nav" to={`${url}`}>Manage All Orders</NavLink>
-                                <NavLink className="dashboard-side-nav" to={`${url}/manageproducts`}>Manage Products</NavLink>
-                                <NavLink className="dashboard-side-nav" to={`${url}/addaproduct`}>Add a Product</NavLink>
+                                <NavLink className="dashboard-side-nav" to={`${url}`}>Manage All Applications</NavLink>
+                                <NavLink className="dashboard-side-nav" to={`${url}/manageproducts`}>Manage Works</NavLink>
+                                <NavLink className="dashboard-side-nav" to={`${url}/addaproduct`}>Add a Work</NavLink>
                                 <NavLink className="dashboard-side-nav" to={`${url}/makeadmin`}>Make Admin</NavLink>
                             </div>
                         }

@@ -15,7 +15,7 @@ const ManageProduct = ({ bike }) => {
     }, []);
 
     const handleDeleteBike = id => {
-        const procced = window.confirm('Are you sure want to delete this bike?');
+        const procced = window.confirm('Are you sure want to delete this work?');
         if (procced) {
             fetch(`https://secure-tundra-16355.herokuapp.com/bikes/${id}`, {
                 method: 'DELETE'
@@ -25,7 +25,7 @@ const ManageProduct = ({ bike }) => {
                     if (data.deletedCount) {
                         const remainings = bikes.filter(remaining => remaining._id !== id);
                         // console.log(remainings);
-                        alert('Bike Deleted, Reload Now.')
+                        alert('Work Deleted, Reload Now.')
                         setBikes(remainings);
                     };
                 });
@@ -34,12 +34,12 @@ const ManageProduct = ({ bike }) => {
 
     return (
         <div className="col">
-            <div className="card-body-custom card h-100">
+            <div className="card-body-custom2 card h-100">
                 <img src={img} className="service-img card-img-top" alt="..." />
                 <div className="card-body">
-                    <h3 className="color fw-bold card-title">{name}</h3>
+                    <h4 className="color fw-bold card-title">{name}</h4>
                 </div>
-                <button onClick={() => { handleDeleteBike(_id) }} className="mx-auto mx-3 mb-3 button">Delete This Bike</button>
+                <button onClick={() => { handleDeleteBike(_id) }} className="mx-auto mx-3 mb-3 button">Delete This Work</button>
             </div>
         </div>
     );

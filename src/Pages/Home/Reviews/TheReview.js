@@ -9,7 +9,7 @@ const TheReview = ({ theReview }) => {
             <div className="card h-100 card-body-custom py-4">
                 <img src={img} className="card-img-top w-50 mx-auto rounded-circle" alt="..." />
                 <div className="card-body text-center p-4 pb-0">
-                    <h5 className="card-title text-primary">{name}</h5>
+                    <h5 className="card-title color">{name}</h5>
                     <Rating className="text-warning card-title"
                         initialRating={rating}
                         emptySymbol="far fa-star icon-color"
